@@ -2,6 +2,7 @@ package baekjoon2042;
 
 import java.util.Scanner;
 
+// reference : https://www.acmicpc.net/blog/view/9
 public class Main {
 	static int N,M,K;			// 수의 개수, 변경 회수, 구간의 합 출력 회수
 	static long [] array;		// input array
