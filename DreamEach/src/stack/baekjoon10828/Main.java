@@ -12,7 +12,7 @@ public class Main {
 		stack = new Stack<>();
 		
 		N = in.nextInt();
-		in.nextLine();
+		in.nextLine();	//nextInt 이후에 엔터코드가 남아있어서 없애주어야한다.
 		int i = 0;
 		while (i<N) {
 			String str = in.nextLine();
