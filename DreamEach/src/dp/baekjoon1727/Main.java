@@ -1,4 +1,4 @@
-package dynamic_programming.baekjoon1727;
+package dp.baekjoon1727;
 
 import java.util.Arrays;
 import java.util.Scanner;
