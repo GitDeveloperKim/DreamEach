@@ -10,6 +10,20 @@ import java.util.List;
 import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
+/*
+ * 
+1. 알아야할 것
+-> LinkedList 썼을때 vs ArrayList 썼을 때 속도 
+-> BufferedReader, BufferedWriter 사용법 
+-> 다익스트라 알고리즘에서 가지치기 방법
+-> comparable 우선순위 설정 암기 (오름차순)
+
+참고 사이트
+https://dragon-h.tistory.com/20
+
+https://www.acmicpc.net/problem/1753
+ * 
+ */
 public class Main {
 
 	public static final int INF = 10000000;	// 10*20000 = 200000 <= INF
