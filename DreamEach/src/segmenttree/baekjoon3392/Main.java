@@ -95,20 +95,25 @@ public class Main {
 			cnt[n] += value;
 		} else {
 			// 범위에 들어올지언정 하단 리프노드까지 내려간다 
+			// 1 <= s <= r 인데 e 가 r보다 큰경우
+			// 1<= e <= r 인데 s가 l 보다 작은경우 
 			int mid = (s+e)/2;
 			update (2*n, s, mid, l, r, value);
 			update (2*n+1, mid+1, e, l, r, value);
 		}
 		
+		// y값에 변화가 없는경우  
 		if (cnt[n] == 0) {
 			if (s != e) 
 				// 리프 노드가 아니면 왼쪽 + 오른쪽 트리 값의 합 
+				// 업데이트 처리 
 				tree[n] = tree[2*n] + tree[2*n+1];
 			else 
 				// 리프 노드라면 0 
 				tree[n] = 0;
 		} else {
 			// count 가 0보다 크다면 n에 업데이트가 되었다는 의미이며 구간의 크기만큼 업데이트 
+			// 즉 y값이 겹치는 부분을 퉁쳐서 한방에 구간의 크기로 업데이트 해주는것  
 			tree[n] = e-s+1;
 		}
 		
