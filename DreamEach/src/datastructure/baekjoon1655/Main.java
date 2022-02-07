@@ -9,6 +9,7 @@ import java.util.PriorityQueue;
 
 
 // 백준 1655 : 가운데를 말해요 
+// https://blog.naver.com/wockd9600/222303467377
 
 public class Main {
 	private static int N; // 1<= N <= 100_000
